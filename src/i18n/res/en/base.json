@@ -1,0 +1,31 @@
+{
+    "home": "Home",
+    "home_hero_title": "Locate Your Favourite",
+    "bank": "Bank",
+    "home_hero_description": "Have you been wondering which bank is the best for you? And you don’t know which one to chose. We are great at helping you make the right decision.",
+    "service_type": "Service Type",
+    "institution_type": "Institution Type",
+    "feature_title": "How it works",
+    "feature_description": "We help you in your banking journey, providing you with information that helps you have better relationship with your bank",
+    "banks": "Banks",
+    "register": "Register",
+    "register_description": "Please Enter Your Details",
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "phone_number": "Phone Number",
+    "email": "Email",
+    "password": "Password",
+    "confirm_password": "Confirm Password",
+    "login": "Login",
+    "welcome_back": "Welcome Back",
+    "have_account": "Already have account ?",
+    "don't_have_account": "Don't have an account ?",
+    "forget_password": "Forget Password",
+    "components": "Components",
+    "institution": "Institution",
+    "blog": "Blog",
+    "about_us": "About Us",
+    "contact_us": "Contact Us"
+  
+  }
+  
