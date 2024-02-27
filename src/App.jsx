@@ -4,7 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import { Suspense } from "react";
 import "./utils/markers.css"
 import LANDING_PAGE_ROUTES from "./Routes/Landing";
-import LoadingPage from "./pages/Loading/Loading";
+import LoadingPage from "./Pages/loading/Loading";
 import "./i18n";
 
 function App() {
