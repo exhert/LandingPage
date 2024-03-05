@@ -7,7 +7,7 @@ import Footer from "../LandingPage/Footer";
 function LandingPageLayout({ children }) {
   return (
     <Box>
-      <Container pos="fixed" top="0" maxW="full"    zIndex={100}    bg={useColorModeValue("gray.50", "gray.900")}
+      <Container  top="0" maxW="full"    zIndex={100}    bg={useColorModeValue("gray.50", "gray.900")}
 >
         <Navbar />
       </Container>
