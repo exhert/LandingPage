@@ -1,14 +1,26 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-undef */
 import {
     Box,
     Flex,
     HStack,
-    Heading,
-    Text,
-    Image,
     Container,
+    Stack,
+    Input,
+    Text,
+    IconButton,
+    useColorModeValue
   } from "@chakra-ui/react";
-  import { appleLogo, newsLetterBg, playstoreLogo } from "../../assets";
-  import Button from "../Base/Button";
+  import { newsLetterBg } from "../../assets";
+import { BiMailSend } from 'react-icons/bi'
+
+const ListHeader = ({ children }) => { // Destructure the children prop
+  return (
+    <Text fontWeight={'700'} fontSize={'2Xl'} mb={2} color={useColorModeValue('yellow', 'gray.800')}>
+      {children}
+    </Text>
+  );
+};
   
   const Newsletter = () => {
     return (
@@ -52,51 +64,28 @@ import {
           left={{ md: "2rem", lg: "5rem" }}
           position="absolute"
           h={{ base: "20rem", md: "20rem" }}>
-          <Box direction="row">
-            <Box color="white" mb="1rem">
-              <Heading
-                fontSize={{ base: "3xl", md: "3xl", lg: "4xl" }}
-                pb={{ md: ".5rem" }}
-                fontWeight={"bold"}
-                textAlign={{ base: "center" }}>
-                Locate your favorite bank
-              </Heading>
-              <Text
-                color={"gray.400"}
-                textAlign={{ base: "center", md: "left" }}
-                fontSize={{ base: "sm", sm: "lg" }}>
-                Locate institutions offering your service
-              </Text>
-            </Box>
-            <Flex justifyContent={{ base: "center" }} columnGap= "1rem">
-              <Button variant="darkBrand" py="1.8rem">
-                <HStack>
-                  <Image src={appleLogo} />
-                  <Box>
-                    <Text fontSize="xs" color="gray.200">
-                      Download On The
-                    </Text>
-                    <Heading as="h6" fontSize={{ md: "1.2rem" }}>
-                      Apple Store
-                    </Heading>
-                  </Box>
-                </HStack>
-              </Button>
-              <Button variant="darkBrand" py="1.8rem">
-                <HStack>
-                  <Image src={playstoreLogo} />
-                  <Box>
-                    <Text fontSize="xs" color="gray.200">
-                      Download From
-                    </Text>
-                    <Heading as="h6" fontSize={{ md: "1.2rem" }}>
-                      Google Play
-                    </Heading>
-                  </Box>
-                </HStack>
-              </Button>
-            </Flex>
-          </Box>
+          <Stack align={'flex-start'}>
+            <ListHeader >Stay up to date</ListHeader>
+            <Stack direction={'row'}>
+              <Input
+                placeholder={'Your email address'}
+                bg={useColorModeValue( 'whiteAlpha.100','blackAlpha.100')}
+                border={0}
+                _focus={{
+                  bg: 'blackAlpha.100',
+                }}
+              />
+              <IconButton
+                bg={useColorModeValue('green.400', 'green.800')}
+                color={useColorModeValue('white', 'gray.800')}
+                _hover={{
+                  bg: 'green.600',
+                }}
+                aria-label="Subscribe"
+                icon={<BiMailSend />}
+              />
+            </Stack>
+          </Stack>
         </HStack>
       </Flex>
       </Container>
