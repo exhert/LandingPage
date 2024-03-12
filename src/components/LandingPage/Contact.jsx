@@ -18,6 +18,7 @@ import {
   InputGroup,
   InputLeftElement,
   Textarea,
+  useColorModeValue
 } from '@chakra-ui/react'
 import {
   MdPhone,
@@ -30,10 +31,10 @@ import { BsTwitter, BsDiscord, BsPerson } from 'react-icons/bs'
 
 export default function Contact() {
   return (
-    <Container bg="#9DC4FB" maxW="full" mt={0} centerContent overflow="hidden">
+    <Container bg={useColorModeValue("gray.50", "gray.900")} maxW="full" mt={0} centerContent overflow="hidden">
       <Flex>
         <Box
-          bg="#02054B"
+          bg="yellow"
           color="white"
           borderRadius="lg"
           m={{ sm: 4, md: 16, lg: 10 }}
@@ -42,9 +43,9 @@ export default function Contact() {
             <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
               <WrapItem>
                 <Box>
-                  <Heading>Contact</Heading>
+                  <Heading>We`re Here to Help</Heading>
                   <Text mt={{ sm: 3, md: 3, lg: 5 }} color="gray.500">
-                    Fill up the form below to contact
+                  Contact our Support Team for Assistance
                   </Text>
                   <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
                     <VStack pl={0} spacing={3} alignItems="flex-start">
@@ -53,7 +54,7 @@ export default function Contact() {
                         height="48px"
                         width="200px"
                         variant="ghost"
-                        color="#DCE2FF"
+                        color="white"
                         _hover={{ border: '2px solid #1C6FEB' }}
                         leftIcon={<MdPhone color="#1970F1" size="20px" />}>
                         +91-988888888
@@ -63,7 +64,7 @@ export default function Contact() {
                         height="48px"
                         width="200px"
                         variant="ghost"
-                        color="#DCE2FF"
+                        color="white"
                         _hover={{ border: '2px solid #1C6FEB' }}
                         leftIcon={<MdEmail color="#1970F1" size="20px" />}>
                         hello@abc.com
@@ -73,7 +74,7 @@ export default function Contact() {
                         height="48px"
                         width="200px"
                         variant="ghost"
-                        color="#DCE2FF"
+                        color="white"
                         _hover={{ border: '2px solid #1C6FEB' }}
                         leftIcon={<MdLocationOn color="#1970F1" size="20px" />}>
                         Karnavati, India

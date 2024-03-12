@@ -16,7 +16,7 @@ import { BiMailSend } from 'react-icons/bi'
 
 const ListHeader = ({ children }) => { // Destructure the children prop
   return (
-    <Text fontWeight={'700'} fontSize={'2Xl'} mb={2} color={useColorModeValue('yellow', 'gray.800')}>
+    <Text fontSize={{ base: "1xl", sm: "2xl" }} fontWeight={"bold"}  color={useColorModeValue('yellow', 'gray.800')}>
       {children}
     </Text>
   );
@@ -29,7 +29,7 @@ const ListHeader = ({ children }) => { // Destructure the children prop
         h={{ base: "20rem", md: "20rem" }}
         maxW={"6xl"}
         borderRadius="xl"
-        my={{base: "none", md: "3rem" }}
+        my={{base: "none", md: "1.5rem" }}
         overflow="hidden">
         <Box
           position="absolute"
@@ -60,13 +60,18 @@ const ListHeader = ({ children }) => { // Destructure the children prop
            <HStack
           zIndex={12}
           float="left"
-          justifyContent="center"
+          justifyContent="start"
           left={{ md: "2rem", lg: "5rem" }}
           position="absolute"
           h={{ base: "20rem", md: "20rem" }}>
           <Stack align={'flex-start'}>
-            <ListHeader >Stay up to date</ListHeader>
-            <Stack direction={'row'}>
+            <ListHeader >Sign up for our weekly newsletter</ListHeader>
+            <Text color="white">Stay informed with the latest updates to buy, sell, and store your coins on the go.</Text>
+            <Stack direction={'row'}
+            mt={5}
+            pt={5}
+              w={{base: "100%", md: "80%" }}
+            >
               <Input
                 placeholder={'Your email address'}
                 bg={useColorModeValue( 'whiteAlpha.100','blackAlpha.100')}

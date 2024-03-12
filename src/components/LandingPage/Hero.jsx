@@ -22,7 +22,7 @@ import {
       py={{ base: 20, md: 28 }}
       direction={{ base: 'column', md: 'row' }}>
       <Stack flex={1} spacing={{ base: 5, md: 10 }}>
-            <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
+            <Heading fontSize={{ base: '2xl', md: '3xl', lg: '4xl' }}>
               <Text
                 as={'span'}
                 position={'relative'}
@@ -36,16 +36,15 @@ import {
                   bg: 'blue.400',
                   zIndex: -1,
                 }}>
-                {t('Freelance')}
+                {t('home_hero_title')}
               </Text>
               <br />{' '}
               <Text color={'yellow'} as={'span'}>
-                Design Projects
+              {t('hero')}
               </Text>{' '}
             </Heading>
             <Text fontSize={{ base: 'md', lg: 'lg' }} color={'gray.800'}>
-              The project board is an exclusive resource for contract work. It`s
-              perfect for freelancers, agencies, and moonlighters.
+             {t("home_hero_description")}
             </Text>
             <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
             <NavLink to={"/auth/register"}>
