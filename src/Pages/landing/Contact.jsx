@@ -3,7 +3,7 @@
 // import {
 //   Box,
 // } from "@chakra-ui/react";
-import LandingPageLayout from '../../components/Layouts/LandingPageLayout'
+import LandingPageLayout from "../../components/Layout/LandingPageLayout"
 // import AboutUs from "../../components/Contact/AboutUs";
 // import Services from "../../components/LandingPage/Services";
 // import NewsLetter from "../../components/Contact/NewsLetter";

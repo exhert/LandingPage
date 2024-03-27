@@ -11,6 +11,7 @@ import {
     // useDisclosure,
     Container,
   } from '@chakra-ui/react';
+  import { NavLink } from 'react-router-dom';
   // import {
   //   HamburgerIcon,
   //   CloseIcon,
@@ -18,6 +19,8 @@ import {
   
   export default function Navbar() {
     // const { isOpen, onToggle } = useDisclosure();
+
+    // const history = useHistory();
 
     return (
      <Box w="100%"
@@ -76,18 +79,21 @@ import {
               spacing = {"1rem"}>
               Sign In
             </Button> */}
+            <NavLink to="/register">
             <Button
               display={{ base: 'flex', md: 'inline-flex' }}
               fontSize={'sm'}
               fontWeight={600}
               color={'white'}
               bg={'brand.700'}
-              href={'#'}
+               onClick={() => history.push('/register')}
+              
               _hover={{
                 bg: 'brand.500',
               }}>
               Get Early Access
             </Button>
+            </NavLink>
           </Stack>
           </Flex>
         </Flex>

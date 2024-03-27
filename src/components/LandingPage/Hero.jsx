@@ -47,7 +47,7 @@ import {
              {t("home_hero_description")}
             </Text>
             <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
-            <NavLink to={"/auth/register"}>
+            <NavLink to={"/register"}>
             <Button
               variant="brand"
               borderRadius="8px"
